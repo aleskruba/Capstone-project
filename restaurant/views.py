@@ -14,7 +14,7 @@ def msg(request):
 # View for listing all menu items and creating a new menu item
 
 class MenuItemsView(generics.ListCreateAPIView):
-    permission_classes = [IsAuthenticated]
+    #permission_classes = [IsAuthenticated]
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
 
